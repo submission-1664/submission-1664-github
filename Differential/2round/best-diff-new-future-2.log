@@ -1,0 +1,51 @@
+
+Gurobi 9.5.2 (mac64[x86], Python) logging started Fri Jul 22 12:52:57 2022
+
+Set parameter Username
+Set parameter LogFile to value "best-diff-new-future-2.log"
+Academic license - for non-commercial use only - expires 2023-07-03
+Read LP format model from file new_best_diff_future_2.lp
+Reading time = 0.01 seconds
+: 930 rows, 620 columns, 6532 nonzeros
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (mac64[x86])
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 930 rows, 620 columns and 6532 nonzeros
+Model fingerprint: 0x2df2afec
+Variable types: 0 continuous, 620 integer (620 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+00]
+Presolve removed 64 rows and 204 columns
+Presolve time: 0.02s
+Presolved: 866 rows, 416 columns, 6264 nonzeros
+Variable types: 0 continuous, 416 integer (352 binary)
+Found heuristic solution: objective 12.0000000
+
+Root relaxation: objective 4.218901e-01, 398 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.42189    0   21   12.00000    0.42189  96.5%     -    0s
+H    0     0                      10.0000000    0.42189  95.8%     -    0s
+     0     0    0.50187    0   71   10.00000    0.50187  95.0%     -    0s
+     0     0    0.51692    0   41   10.00000    0.51692  94.8%     -    0s
+     0     0    0.54312    0   50   10.00000    0.54312  94.6%     -    0s
+     0     0    0.67937    0   55   10.00000    0.67937  93.2%     -    0s
+     0     0    2.00000    0   79   10.00000    2.00000  80.0%     -    0s
+     0     0    2.00000    0   68   10.00000    2.00000  80.0%     -    0s
+     0     0    2.00000    0   94   10.00000    2.00000  80.0%     -    0s
+     0     0    2.00000    0   95   10.00000    2.00000  80.0%     -    0s
+     0     0    2.00000    0  153   10.00000    2.00000  80.0%     -    0s
+     0     0    2.00000    0  153   10.00000    2.00000  80.0%     -    0s
+     0     2    2.00000    0  153   10.00000    2.00000  80.0%     -    0s
+
+Explored 6405 nodes (80402 simplex iterations) in 2.02 seconds (2.04 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 2: 10 12 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+01, best bound 1.000000000000e+01, gap 0.0000%

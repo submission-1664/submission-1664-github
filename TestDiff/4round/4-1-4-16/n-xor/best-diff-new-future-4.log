@@ -1,0 +1,58 @@
+
+Gurobi 9.5.2 (mac64[x86], Python) logging started Fri Oct 21 00:58:15 2022
+
+Set parameter Username
+Set parameter LogFile to value "best-diff-new-future-4.log"
+Academic license - for non-commercial use only - expires 2023-07-03
+Read LP format model from file new_best_diff_future_4.lp
+Reading time = 0.01 seconds
+: 2409 rows, 1508 columns, 14612 nonzeros
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (mac64[x86])
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 2409 rows, 1508 columns and 14612 nonzeros
+Model fingerprint: 0xb5f4f875
+Variable types: 0 continuous, 1508 integer (1508 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Presolve removed 311 rows and 210 columns
+Presolve time: 0.03s
+Presolved: 2098 rows, 1298 columns, 13868 nonzeros
+Variable types: 0 continuous, 1298 integer (1298 binary)
+
+Root relaxation: objective 1.370347e+01, 1310 iterations, 0.03 seconds (0.03 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   13.70347    0  308          -   13.70347      -     -    0s
+     0     0   35.87892    0  266          -   35.87892      -     -    0s
+     0     0   35.87892    0  288          -   35.87892      -     -    0s
+     0     0   35.92317    0  407          -   35.92317      -     -    0s
+     0     0   35.92317    0  341          -   35.92317      -     -    0s
+     0     2   35.92317    0  327          -   35.92317      -     -    0s
+  1083   911   50.00000   30  129          -   50.00000      -  17.3    5s
+* 1726  1113              79      52.0000000   50.00000  3.85%  51.3    7s
+
+Cutting planes:
+  Gomory: 79
+  Cover: 266
+  Implied bound: 2
+  Clique: 116
+  MIR: 21
+  StrongCG: 9
+  Flow cover: 84
+  GUB cover: 83
+  Inf proof: 1
+  Zero half: 79
+  RLT: 60
+
+Explored 2018 nodes (161042 simplex iterations) in 9.40 seconds (7.37 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 52 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.200000000000e+01, best bound 5.200000000000e+01, gap 0.0000%
